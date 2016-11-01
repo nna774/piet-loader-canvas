@@ -1,11 +1,11 @@
 {
   "name": "piet-loader-canvas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "load piet from canvas context",
   "main": "index.js",
   "scripts": {
-    "test": "echo no test",
-    "lint": "eslint --ignore-pattern '**/node_modules/' \"**/*.js\""
+    "test": "mocha --compilers js:babel-register test/**/*.js",
+    "lint": "eslint --ignore-pattern '**/node_modules/' --ignore-pattern '/test/' \"**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,16 @@
   },
   "homepage": "https://github.com/nna774/piet-loader-canvas#readme",
   "devDependencies": {
+    "canvas": "^1.5.0",
+    "easyimage": "^2.1.0",
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
     "eslint": "^3.6.1",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.3.0"
+    "eslint-plugin-react": "^6.3.0",
+    "mocha": "^3.0.2"
   }
 }

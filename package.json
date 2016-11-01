@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register test/**/*.js",
-    "lint": "eslint --ignore-pattern '**/node_modules/' \"**/*.js\""
+    "lint": "eslint --ignore-pattern '**/node_modules/' --ignore-pattern '/test/' \"**/*.js\""
   },
   "repository": {
     "type": "git",

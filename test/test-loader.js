@@ -2,7 +2,7 @@ const assert = require('assert');
 const Canvas = require('canvas');
 const fs = require('fs');
 const easyimg = require('easyimage');
-const loader = require('../lib/loader');
+const loader = require('../src/lib/loader');
 
 const Image = Canvas.Image;
 const pattern20 = [

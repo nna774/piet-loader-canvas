@@ -1,6 +1,6 @@
 {
   "name": "piet-loader-canvas",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "load piet from canvas context",
   "main": "dist/index.js",
   "scripts": {
